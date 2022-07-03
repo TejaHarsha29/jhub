@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/usser_pp"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/circle"
+        android:padding="2.5dp"
+        android:src="@drawable/man"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/andika_new_basic_bold"
+        android:text="Teja Harsha"
+        android:textColor="#000000"
+        android:textSize="14.5sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintStart_toEndOf="@+id/usser_pp"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="18011U0403"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintStart_toEndOf="@+id/usser_pp"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <ImageView
+        android:id="@+id/star_count"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginEnd="18dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toStartOf="@+id/rose"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="3 fans"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toEndOf="@+id/star_count"
+        app:layout_constraintStart_toStartOf="@+id/star_count"
+        app:layout_constraintTop_toBottomOf="@+id/star_count" />
+
+    <ImageView
+        android:id="@+id/rose"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+
+        android:layout_marginEnd="18dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toStartOf="@+id/dosth"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="5 crushes"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toEndOf="@+id/rose"
+        app:layout_constraintStart_toStartOf="@+id/rose"
+        app:layout_constraintTop_toBottomOf="@+id/rose" />
+
+    <ImageView
+        android:id="@+id/dosth"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginEnd="18dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+
+        android:text="3 Bffs's"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toEndOf="@+id/dosth"
+        app:layout_constraintStart_toStartOf="@+id/dosth"
+        app:layout_constraintTop_toBottomOf="@+id/dosth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="Home"
+
+        app:cnb_backgroundColor="#fece2e"
+        app:cnb_iconColor="@color/black"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/black"
+
+
+
+        />
+
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/search"
+        android:title="Search"
+
+        app:cnb_backgroundColor="#fece2e"
+        app:cnb_iconColor="@color/black"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/black"
+
+
+
+        />
+
+    <item
+        android:id="@+id/notificate"
+        android:title="notifications"
+        android:icon="@drawable/notifications"
+        app:cnb_backgroundColor="#fece2e"
+        app:cnb_iconColor="@color/black"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/black"/>
+
+    <item
+        android:id="@+id/job"
+        android:title="Placements"
+        android:icon="@drawable/job"
+        app:cnb_backgroundColor="#fece2e"
+        app:cnb_iconColor="@color/black"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/black"/>
+
+
+
+</menu>

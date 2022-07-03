@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dashBoardReV"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/post"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_35mdp"
+
+
+        android:background="@drawable/post_btn_back"
+        android:elevation="@dimen/_1mdp"
+
+        android:outlineSpotShadowColor="#353333"
+        app:layout_constraintBottom_toBottomOf="@+id/post_shafow"
+        app:layout_constraintEnd_toEndOf="@+id/post_shafow"
+        app:layout_constraintStart_toEndOf="@+id/post_shafow"
+        app:layout_constraintStart_toStartOf="@+id/post_shafow"
+        app:layout_constraintTop_toTopOf="@+id/post_shafow"></ImageView>
+
+
+    <ImageView
+        android:layout_width="@dimen/_18mdp"
+        android:layout_height="@dimen/_18mdp"
+        android:elevation="@dimen/_1mdp"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/post_shafow"
+        app:layout_constraintEnd_toEndOf="@+id/post_shafow"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/post_shafow"
+        app:layout_constraintTop_toTopOf="@+id/post_shafow"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_1mdp"
+        android:text="Add post"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/post_shafow"
+        app:layout_constraintEnd_toEndOf="@+id/post_shafow"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/post_shafow"
+        app:layout_constraintTop_toTopOf="@+id/post_shafow"></TextView>
+
+    <ImageView
+        android:id="@+id/post_shafow"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_35mdp"
+
+
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="90dp"
+        android:outlineSpotShadowColor="#353333"
+        android:src="@drawable/post_ack_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

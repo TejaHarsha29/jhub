@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/final_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="@dimen/_250mdp"
+        android:layout_height="@dimen/_450mdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_13mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5">
+
+        <TextView
+            android:id="@+id/confess_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fontFamily="@font/best_val"
+
+            android:gravity="center"
+
+            android:text="@string/confession"
+            android:textColor="#000000"
+            android:textSize="@dimen/_19font_mdp"></TextView>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/usser_pp"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_50mdp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/yellow_circle"
+            android:padding="2.5dp"
+            android:src="@drawable/johncena"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/man" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/andika_new_basic_bold"
+            android:text="John Cena"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+            app:layout_constraintStart_toEndOf="@+id/usser_pp"
+            app:layout_constraintTop_toTopOf="@+id/usser_pp"
+            app:layout_constraintVertical_bias="0.16000003" />
+
+
+        <TextView
+            android:id="@+id/about_pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="You can't see me"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <ImageView
+            android:id="@+id/like_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/like_highlighted"
+            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+            app:layout_constraintEnd_toStartOf="@+id/report_btn"
+            app:layout_constraintTop_toTopOf="@+id/usser_pp"
+            app:layout_constraintVertical_bias="0.31"></ImageView>
+
+        <TextView
+            android:id="@+id/likessss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="27dp"
+            android:text="0 likes"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+            app:layout_constraintEnd_toEndOf="@+id/like_btn"
+            app:layout_constraintStart_toStartOf="@+id/like_btn"
+            app:layout_constraintTop_toBottomOf="@+id/like_btn"
+            app:layout_constraintVertical_bias="0.0"></TextView>
+
+
+        <ImageView
+            android:id="@+id/report_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/dots"
+            android:text="Report"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/usser_pp"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck"></ImageView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

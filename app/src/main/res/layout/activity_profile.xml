@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50mdp"
+        android:background="#fece2e"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_25mdp"
+            android:layout_height="@dimen/_25mdp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/left_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:id="@+id/naam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Teja Harsha"
+            android:textColor="#000000"
+            android:textSize="@dimen/_20font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.76" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="@dimen/_23mdp"
+            android:layout_height="@dimen/_23mdp"
+
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/logout"
+            android:background="@drawable/circle"
+            android:padding="2dp"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/usser_pp"
+
+        android:layout_width="@dimen/_65mdp"
+        android:layout_height="@dimen/_65mdp"
+
+
+        android:layout_marginStart="28dp"
+        android:padding="2.5dp"
+
+        android:background="@drawable/yellow_circle"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.029999971"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="@dimen/_19mdp"
+        android:layout_height="@dimen/_19mdp"
+        android:background="@drawable/yellow_circle"
+
+
+        android:backgroundTint="#CCFFFFFF"
+        android:padding="6dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toEndOf="@+id/usser_pp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/usser_pp"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.86"
+        app:srcCompat="@drawable/pencil" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Teja Harsha"
+        android:textColor="#000000"
+        android:textSize="@dimen/_14font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/usser_pp"
+        app:layout_constraintStart_toStartOf="@+id/usser_pp"
+        app:layout_constraintTop_toBottomOf="@+id/usser_pp" />
+
+
+    <TextView
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="keep smiling"
+        android:textColor="#000000"
+        android:textSize="10.5sp"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/usser_pp" />
+
+
+    <LinearLayout
+        android:id="@+id/postNotxt"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="34dp"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintStart_toEndOf="@+id/usser_pp"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share_post"
+
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/posstsno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/likesNotxt"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="34dp"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintStart_toEndOf="@+id/postNotxt"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/like_highlighted"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="500"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintStart_toEndOf="@+id/likesNotxt"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_highlight"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/star_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="23"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/postNotxt2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/likesNotxt"
+        app:layout_constraintStart_toEndOf="@+id/postNotxt"
+        app:layout_constraintTop_toBottomOf="@+id/postNotxt">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rose_highlight"
+
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/crush_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/postNotxt3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintStart_toEndOf="@+id/likesNotxt"
+        app:layout_constraintTop_toBottomOf="@+id/likesNotxt">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/friend_highlight"
+
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/bffs_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_marginTop="8dp"
+        android:background="#e9e6e1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></View>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postNotxt2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/pr_back"
+            android:text="Edit Profile"
+            android:textSize="10dp"
+
+            tools:ignore="TouchTargetSizeCheck"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/pr_back"
+
+            android:text="Add Post"
+            android:textSize="10dp"
+
+            tools:ignore="TouchTargetSizeCheck"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_weight="1"
+
+            android:background="@drawable/pr_back"
+            android:text="LeaderBoard"
+            android:textSize="10dp"
+
+            tools:ignore="TouchTargetSizeCheck"></Button>
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dashBoardReV"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
