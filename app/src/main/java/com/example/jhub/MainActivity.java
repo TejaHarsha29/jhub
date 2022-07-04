@@ -84,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
                 user = snapshot.getValue(UserModel.class);
 
 
+                try {
+                    Picasso.get().load(user.getProfile_photo()).placeholder(R.drawable.man).into(profile);
+
+                }catch (Exception e){
+
+                }
+
+
 
 
 

@@ -14,9 +14,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,7 +60,6 @@ public class ProfileActivity extends AppCompatActivity {
 
     ImageView ediiit;
 
-    ImageView settings;
 
     TextView name,roll;
 
@@ -71,6 +72,10 @@ public class ProfileActivity extends AppCompatActivity {
     ActivityResultLauncher<String> mTakePhoto;
 
     Button editProfile,addPost;
+
+
+    ImageView menuProfile;
+
 
     long k;
 
@@ -88,7 +93,6 @@ public class ProfileActivity extends AppCompatActivity {
 
         editImage.setImageResource(R.drawable.man);
 
-        settings = findViewById(R.id.setting);
 
         name = findViewById(R.id.userName);
 
@@ -118,6 +122,45 @@ public class ProfileActivity extends AppCompatActivity {
         editProfile = findViewById(R.id.edit_profile);
 
         addPost = findViewById(R.id.add_image);
+
+        menuProfile = findViewById(R.id.setting);
+
+
+        menuProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popup = new PopupMenu(ProfileActivity.this,menuProfile);
+                //inflating menu from xml resource
+                popup.inflate(R.menu.profile_menu);
+                //adding click listener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.sign_out:
+                                auth.signOut();
+                                Intent intent = new Intent(ProfileActivity.this,LoginActivity.class);
+                                startActivity(intent);
+                                finish();
+                                return true;
+
+                            case R.id.saved_posts:
+                                Toast.makeText(ProfileActivity.this,"This feature will be available soon",Toast.LENGTH_SHORT).show();
+                                return true;
+
+                            default:
+                                return false;
+                        }
+                    }
+                });
+                //displaying the popup
+                popup.show();
+            }
+        });
+
+
+
+
 
 
 
@@ -270,23 +313,13 @@ public class ProfileActivity extends AppCompatActivity {
         if(!uid.equals(FirebaseAuth.getInstance().getUid())){
             ediiit.setVisibility(View.GONE);
             editImage.setEnabled(false);
-            settings.setVisibility(View.GONE);
+            menuProfile.setVisibility(View.GONE);
             editProfile.setEnabled(false);
             editProfile.setVisibility(View.GONE);
         }
 
 
 
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                auth.signOut();
-                Intent intent = new Intent(ProfileActivity.this,LoginActivity.class);
-                startActivity(intent);
-                finish();
-
-            }
-        });
 
 
         database.getReference().child("Users").child(uid).addListenerForSingleValueEvent(new ValueEventListener() {

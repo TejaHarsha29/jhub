@@ -71,9 +71,11 @@ public class CustomisePlacementActivity extends AppCompatActivity {
                 progressDialog.setCancelable(false);
 
 
-                String txt = companyName.getText().toString()+" is hiring ,Batch:"+batchh.getText().toString()+",Salary:"
-                        +packageee.getText().toString()+"Qualification:"+eligibility.getText().toString()+" last Date"+
+                String txt = companyName.getText().toString()+" is hiring,Batch : "+batchh.getText().toString()+",Salary : "
+                        +packageee.getText().toString()+" Qualification : "+eligibility.getText().toString()+" last Date "+
                         lastDate.getText().toString();
+
+
 
                 PlacementModel placementModel = new PlacementModel(txt,link.getText().toString());
                 placementModel.setPostedBy(FirebaseAuth.getInstance().getUid());

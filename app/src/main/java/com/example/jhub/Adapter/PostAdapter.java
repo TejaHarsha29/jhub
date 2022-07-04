@@ -75,6 +75,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder>{
                 //inflating menu from xml resource
                 popup.inflate(R.menu.options_menu);
                 //adding click listener
+
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
@@ -142,6 +143,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder>{
             @Override
             public void onClick(View v) {
                 if(holder.saveBtn.getTag().equals("like")){
+
+
+
                     FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getUid())
                             .child("Saved").child(model.getPost_id()).setValue(true);
 

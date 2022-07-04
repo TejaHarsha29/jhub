@@ -3,6 +3,7 @@ package com.example.jhub;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -27,6 +28,9 @@ public class CreateConfessionActivity extends AppCompatActivity {
     FirebaseDatabase database;
 
     ImageView back;
+
+    ProgressDialog progressDialog;
+
 
 
 
@@ -84,12 +88,24 @@ public class CreateConfessionActivity extends AppCompatActivity {
         confess_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                progressDialog = new ProgressDialog(CreateConfessionActivity.this);
+
+
+                progressDialog.setMessage("Posting...");
+                progressDialog.show();
+
+
+                progressDialog.setCancelable(false);
+
+
                 ConfessionModel confessionModel = new ConfessionModel();
                 confessionModel.setConfessionText(confession_txt.getText().toString());
                 confessionModel.setPostedAt(new Date().getTime());
                 database.getReference().child("Confessions").push().setValue(confessionModel).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
+                        progressDialog.dismiss();
                         CreateConfessionActivity.this.finish();
                     }
                 });

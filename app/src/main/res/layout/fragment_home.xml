@@ -15,20 +15,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dashBoardReV"
             android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
 
-            app:shimmer_demo_child_count="10"
-            app:shimmer_demo_layout="@layout/post_shimmer"
 
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+            app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
 
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

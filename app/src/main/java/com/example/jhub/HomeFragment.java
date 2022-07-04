@@ -31,7 +31,7 @@ import java.util.Collections;
 public class HomeFragment extends Fragment {
 
 
-    ShimmerRecyclerView dashBoardRv;
+    RecyclerView dashBoardRv;
 
     ArrayList<PostModel> listOfPosts;
 
@@ -52,7 +52,6 @@ public class HomeFragment extends Fragment {
 
         dashBoardRv = view.findViewById(R.id.dashBoardReV);
 
-        dashBoardRv.showShimmerAdapter();
 
         postt = view.findViewById(R.id.post);
 
@@ -86,6 +85,8 @@ public class HomeFragment extends Fragment {
         dashBoardRv.setLayoutManager(linearLayoutManager);
         dashBoardRv.setNestedScrollingEnabled(false);
 
+        dashBoardRv.setAdapter(postAdapter);
+
 
 
 
@@ -98,15 +99,17 @@ public class HomeFragment extends Fragment {
                     PostModel postModel = snapshot1.getValue(PostModel.class);
                     postModel.setPost_id(snapshot1.getKey());
                     listOfPosts.add(postModel);
+
                 }
 
-                dashBoardRv.setAdapter(postAdapter);
 
 
-                dashBoardRv.hideShimmerAdapter();
+
                 Collections.reverse(listOfPosts);
 
                 postAdapter.notifyDataSetChanged();
+
+
 
 
 

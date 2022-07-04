@@ -60,6 +60,7 @@ public class NotificationFragment extends Fragment {
 
 
 
+
         database.getReference().child("Notification").child(FirebaseAuth.getInstance().getUid())
                 .addValueEventListener(new ValueEventListener() {
                     @Override

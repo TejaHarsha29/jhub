@@ -9,6 +9,9 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+
         android:theme="@style/Theme.JHub">
         <activity
             android:name=".EditProfileActivity"

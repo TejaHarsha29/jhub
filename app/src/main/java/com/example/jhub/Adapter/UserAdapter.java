@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.jhub.Model.BffsModel;
@@ -91,6 +93,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
                 context.startActivity(intent);
             }
         });
+
 
 
         isStarred(user.getUser_id(), holder.star,"Stars",R.drawable.star_highlight,R.drawable.star);
@@ -199,12 +202,14 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
         ImageView crush,dosth;
         TextView crush_count,dosth_count;
 
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             user_pp = itemView.findViewById(R.id.usser_pp);
             star = itemView.findViewById(R.id.star_count);
             name = itemView.findViewById(R.id.name);
             about = itemView.findViewById(R.id.about);
+
 
             rollNumber = itemView.findViewById(R.id.roll);
 

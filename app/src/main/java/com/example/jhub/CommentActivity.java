@@ -31,6 +31,8 @@ public class CommentActivity extends AppCompatActivity {
     EditText commentEditText;
     ImageView commentSendBtn;
 
+    ImageView imageView;
+
 
     FirebaseDatabase database;
     FirebaseAuth auth;
@@ -54,6 +56,8 @@ public class CommentActivity extends AppCompatActivity {
 
 
         list = new ArrayList<>();
+
+        imageView = findViewById(R.id.imageView3);
 
 
 
@@ -102,6 +106,13 @@ public class CommentActivity extends AppCompatActivity {
                         }
                     });
                 }
+            }
+        });
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CommentActivity.this.finish();
             }
         });
 
