@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -69,6 +70,8 @@ public class ProfileActivity extends AppCompatActivity {
 
     ActivityResultLauncher<String> mTakePhoto;
 
+    Button editProfile,addPost;
+
     long k;
 
 
@@ -112,9 +115,33 @@ public class ProfileActivity extends AppCompatActivity {
 
         listOfPosts = new ArrayList<>();
 
+        editProfile = findViewById(R.id.edit_profile);
+
+        addPost = findViewById(R.id.add_image);
+
+
 
 
         swipeRefreshLayout = findViewById(R.id.swipe_to_refresh);
+
+        addPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this,CostommisePostActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this,EditProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         String uid = getIntent().getStringExtra("user_id").toString();
@@ -244,6 +271,8 @@ public class ProfileActivity extends AppCompatActivity {
             ediiit.setVisibility(View.GONE);
             editImage.setEnabled(false);
             settings.setVisibility(View.GONE);
+            editProfile.setEnabled(false);
+            editProfile.setVisibility(View.GONE);
         }
 
 
@@ -290,11 +319,8 @@ public class ProfileActivity extends AppCompatActivity {
         editImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ImagePicker.with(ProfileActivity.this)
-                        .crop()		//Crop image(Optional), Check Customization for more option
-                        .compress(1024)			//Final image size will be less than 1 MB(Optional)
-                        .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
-                        .start();
+                Intent intent = new Intent(ProfileActivity.this,EditProfileActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -329,4 +355,12 @@ public class ProfileActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onRestart()
+    {
+        super.onRestart();
+        finish();
+        startActivity(getIntent());
+    }
+
 }

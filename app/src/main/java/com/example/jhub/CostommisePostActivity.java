@@ -89,7 +89,7 @@ public class CostommisePostActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CostommisePostActivity.this.finish();
+                finish();
             }
         });
 

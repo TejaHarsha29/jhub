@@ -360,6 +360,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder>{
                 if(snapshot.child(postid).exists()){
                     imageView.setImageResource(R.drawable.save_highlighted);
                     imageView.setTag("liked");
+
+
                 }
                 else{
                     imageView.setImageResource(R.drawable.saved);

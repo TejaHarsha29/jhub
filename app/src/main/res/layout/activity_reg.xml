@@ -70,6 +70,7 @@
             android:backgroundTint="@color/white"
             android:layout_marginTop="25dp"
             android:ems="10"
+            android:paddingEnd="20dp"
             android:hint="User Name"
             android:inputType="text"
             android:paddingLeft="55dp"
@@ -87,6 +88,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/user_name"
             app:layout_constraintEnd_toEndOf="@+id/user_name"
 
+
             app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="@+id/user_name"
             app:layout_constraintTop_toTopOf="@+id/user_name"></ImageView>
@@ -102,6 +104,8 @@
             android:hint="Roll Number"
             android:inputType="text"
             android:paddingLeft="55dp"
+            android:paddingEnd="20dp"
+
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,6 +132,9 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/et_back"
             android:backgroundTint="@color/white"
+
+            android:paddingEnd="20dp"
+
 
 
             android:ems="10"

@@ -321,6 +321,7 @@
         app:layout_constraintTop_toBottomOf="@+id/postNotxt2">
 
         <Button
+            android:id="@+id/edit_profile"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginLeft="10dp"
@@ -328,11 +329,12 @@
             android:layout_weight="1"
             android:background="@drawable/pr_back"
             android:text="Edit Profile"
-            android:textSize="10dp"
 
+            android:textSize="10dp"
             tools:ignore="TouchTargetSizeCheck"></Button>
 
         <Button
+            android:id="@+id/add_image"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginLeft="10dp"

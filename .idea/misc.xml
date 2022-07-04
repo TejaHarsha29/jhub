@@ -9,6 +9,7 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/circle.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/dabba.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/et_back.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/et_back_stroke.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/post_ack_shadow.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/post_bg.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/post_bg_highlighted.xml" value="0.26614583333333336" />
@@ -23,6 +24,7 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_costommise_post.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_create_confession.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_customise_placement.xml" value="0.2" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_likes.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_main.xml" value="0.152" />
@@ -42,6 +44,7 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/like_rv_sample.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/notification_sample.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/placement_rv_sample.xml" value="0.264" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/post_shimmer.xml" value="0.264" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/progres_dialog.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/story_rv_design.xml" value="0.536" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/user_sample.xml" value="0.264" />

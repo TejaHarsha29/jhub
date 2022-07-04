@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.example.jhub.Adapter.PostAdapter;
 import com.example.jhub.Model.PostModel;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,7 +31,8 @@ import java.util.Collections;
 public class HomeFragment extends Fragment {
 
 
-    RecyclerView dashBoardRv;
+    ShimmerRecyclerView dashBoardRv;
+
     ArrayList<PostModel> listOfPosts;
 
     ImageView postt;
@@ -48,6 +50,10 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        dashBoardRv = view.findViewById(R.id.dashBoardReV);
+
+        dashBoardRv.showShimmerAdapter();
+
         postt = view.findViewById(R.id.post);
 
 
@@ -59,7 +65,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        dashBoardRv = view.findViewById(R.id.dashBoardReV);
 
         listOfPosts = new ArrayList<>();
 
@@ -80,7 +85,6 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         dashBoardRv.setLayoutManager(linearLayoutManager);
         dashBoardRv.setNestedScrollingEnabled(false);
-        dashBoardRv.setAdapter(postAdapter);
 
 
 
@@ -95,6 +99,11 @@ public class HomeFragment extends Fragment {
                     postModel.setPost_id(snapshot1.getKey());
                     listOfPosts.add(postModel);
                 }
+
+                dashBoardRv.setAdapter(postAdapter);
+
+
+                dashBoardRv.hideShimmerAdapter();
                 Collections.reverse(listOfPosts);
 
                 postAdapter.notifyDataSetChanged();

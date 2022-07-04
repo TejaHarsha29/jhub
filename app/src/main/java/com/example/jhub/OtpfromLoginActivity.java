@@ -22,7 +22,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.concurrent.TimeUnit;
 
@@ -74,6 +77,10 @@ public class OtpfromLoginActivity extends AppCompatActivity {
         verify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
+
                 if(otp_et.getText().toString().isEmpty()){
 
                 }
@@ -93,6 +100,10 @@ public class OtpfromLoginActivity extends AppCompatActivity {
                     PhoneAuthCredential credential= PhoneAuthProvider.getCredential(otpId,otp_et.getText().toString());
                     signInWithPhoneAuthCredential(credential);
                 }
+
+
+
+
             }
         });
     }

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50mdp"
+        android:background="#fece2e"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_25mdp"
+            android:layout_height="@dimen/_25mdp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/left_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:id="@+id/naam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Edit Profile"
+            android:textColor="#000000"
+            android:textSize="@dimen/_20font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.76" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/usser_pp"
+
+        android:layout_width="@dimen/_65mdp"
+        android:layout_height="@dimen/_65mdp"
+
+
+        android:background="@drawable/yellow_circle"
+        android:src="@drawable/man"
+
+        android:padding="2.5dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="@dimen/_19mdp"
+        android:layout_height="@dimen/_19mdp"
+        android:background="@drawable/yellow_circle"
+
+
+        android:backgroundTint="#CCFFFFFF"
+        android:padding="6dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+        app:layout_constraintEnd_toEndOf="@+id/usser_pp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/usser_pp"
+        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.86"
+        app:srcCompat="@drawable/pencil" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_back_stroke"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        android:paddingLeft="55dp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usser_pp"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="@+id/user_name"
+        app:layout_constraintEnd_toEndOf="@+id/user_name"
+
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toTopOf="@+id/user_name"></ImageView>
+
+    <Button
+        android:id="@+id/update_details"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_back"
+        android:paddingRight="40dp"
+
+        android:text="Update details"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        app:layout_constraintVertical_bias="0.0"></Button>
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:elevation="10dp"
+        android:src="@drawable/next"
+
+        app:layout_constraintBottom_toBottomOf="@+id/update_details"
+        app:layout_constraintEnd_toEndOf="@+id/update_details"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/update_details"
+        app:layout_constraintTop_toTopOf="@+id/update_details"
+        app:tint="@color/white"></ImageView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
