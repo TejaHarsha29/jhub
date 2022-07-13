@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PlacementFragment">
+    tools:context="com.appsByHarsha.jhub.PlacementFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_to_refresh"
@@ -28,6 +28,7 @@
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
+
     <ImageView
         android:id="@+id/post"
         android:layout_width="@dimen/_100mdp"
@@ -38,6 +39,7 @@
         android:elevation="@dimen/_1mdp"
 
         android:outlineSpotShadowColor="#353333"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/post_shafow"
         app:layout_constraintEnd_toEndOf="@+id/post_shafow"
         app:layout_constraintStart_toEndOf="@+id/post_shafow"
@@ -46,10 +48,12 @@
 
 
     <ImageView
+        android:id="@+id/plus"
         android:layout_width="@dimen/_18mdp"
         android:layout_height="@dimen/_18mdp"
         android:elevation="@dimen/_1mdp"
         android:src="@drawable/plus"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/post_shafow"
         app:layout_constraintEnd_toEndOf="@+id/post_shafow"
         app:layout_constraintHorizontal_bias="0.19"
@@ -57,11 +61,15 @@
         app:layout_constraintTop_toTopOf="@+id/post_shafow"></ImageView>
 
     <TextView
+        android:id="@+id/addP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:elevation="@dimen/_1mdp"
+
+
         android:text="Add post"
         android:textColor="@color/black"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/post_shafow"
         app:layout_constraintEnd_toEndOf="@+id/post_shafow"
         app:layout_constraintHorizontal_bias="0.79"
@@ -78,6 +86,7 @@
         android:layout_marginBottom="90dp"
         android:outlineSpotShadowColor="#353333"
         android:src="@drawable/post_ack_shadow"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"></ImageView>
 

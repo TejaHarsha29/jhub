@@ -16,6 +16,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/_25mdp"
+            android:layout_height="@dimen/_25mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cupid"
+            app:layout_constraintHorizontal_bias="0.91"
+            android:backgroundTint="@color/black"
+
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/leader" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -41,7 +54,7 @@
             app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/cupid" />
+            app:srcCompat="@drawable/love_leter" />
 
 
 
@@ -102,8 +115,10 @@
             app:cnb_addRightInset="false"
             app:cnb_addTopInset="false"
             app:cnb_animationDuration="175"
+
             app:cnb_backgroundColor="@color/black"
-            app:cnb_badgeColor="@color/white"
+            app:cnb_badgeColor="@color/purple_200"
+
             app:cnb_iconColor="@color/black"
             app:cnb_iconSize="@dimen/_20mdp"
             app:cnb_iconTintMode="src_in"

@@ -9,7 +9,7 @@
     android:layout_gravity="center"
 
 
-    tools:context=".RegActivity"
+    tools:context="com.appsByHarsha.jhub.RegActivity"
     >
 
 
@@ -70,6 +70,7 @@
             android:backgroundTint="@color/white"
             android:layout_marginTop="25dp"
             android:ems="10"
+            android:maxLength="15"
             android:paddingEnd="20dp"
             android:hint="User Name"
             android:inputType="text"
@@ -102,6 +103,7 @@
             android:backgroundTint="@color/white"
             android:ems="10"
             android:hint="Roll Number"
+            android:maxLength="10"
             android:inputType="text"
             android:paddingLeft="55dp"
             android:paddingEnd="20dp"
@@ -119,6 +121,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/roll_no"
             app:layout_constraintEnd_toEndOf="@+id/roll_no"
             app:layout_constraintHorizontal_bias="0.08"
+
             app:layout_constraintStart_toStartOf="@+id/roll_no"
             app:layout_constraintTop_toTopOf="@+id/roll_no"></ImageView>
 
@@ -134,6 +137,8 @@
             android:backgroundTint="@color/white"
 
             android:paddingEnd="20dp"
+
+            android:maxLength="10"
 
 
 
@@ -160,12 +165,29 @@
             app:layout_constraintTop_toTopOf="@+id/phone" />
 
 
+        <TextView
+            android:id="@+id/termsAndConditions"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone"></TextView>
+
+
         <ImageView
+            android:id="@+id/imageView7"
             android:layout_width="21dp"
             android:layout_height="21dp"
             android:elevation="10dp"
-            android:src="@drawable/next"
 
+            android:src="@drawable/next"
             app:layout_constraintBottom_toBottomOf="@+id/getOtpBtn"
             app:layout_constraintEnd_toEndOf="@+id/getOtpBtn"
             app:layout_constraintHorizontal_bias="0.8"
@@ -177,15 +199,16 @@
             android:id="@+id/getOtpBtn"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/btn_back"
             android:paddingRight="10dp"
-            android:text="get otp"
 
+            android:text="get otp"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/phone"></Button>
+            app:layout_constraintTop_toBottomOf="@+id/termsAndConditions"></Button>
 
         <TextView
             android:id="@+id/nav_to_login"

@@ -25,6 +25,7 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_create_confession.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_customise_placement.xml" value="0.2" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_leader_board.xml" value="0.4" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_likes.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -49,9 +50,14 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/progres_dialog.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/story_rv_design.xml" value="0.536" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/user_sample.xml" value="0.264" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/menu/filter_params.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/menu/main.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/menu/options_menu.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/menu/placement_delete.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/menu/profile_menu.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/menu/report_only.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14322916666666666" />
       </map>
     </option>
   </component>

@@ -7,7 +7,7 @@
     android:background="#fece2e"
 
 
-    tools:context=".OtpfromLoginActivity">
+    tools:context="com.appsByHarsha.jhub.OtpfromLoginActivity">
 
     <TextView
         android:id="@+id/textView"

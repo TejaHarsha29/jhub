@@ -54,6 +54,7 @@
         android:layout_width="@dimen/_17mdp"
         android:layout_height="@dimen/_17mdp"
         android:layout_marginEnd="8dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/usser_pp"

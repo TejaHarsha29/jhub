@@ -4,5 +4,9 @@
         android:id="@+id/report"
         android:title="report"
         ></item>
+    <item
+        android:id="@+id/delete"
+        android:title="delete"
+        ></item>
 
 </menu>

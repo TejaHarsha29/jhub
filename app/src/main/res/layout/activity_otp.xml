@@ -47,6 +47,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enter" />
 
+    <TextView
+        android:id="@+id/txt_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="This may take a while..please wait!!"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
     <com.chaos.view.PinView
         android:id="@+id/otp_entry"
         style="@style/PinWidget.PinView"

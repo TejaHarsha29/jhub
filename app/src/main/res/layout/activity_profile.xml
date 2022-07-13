@@ -355,6 +355,7 @@
             tools:ignore="TouchTargetSizeCheck"></Button>
 
         <Button
+            android:id="@+id/leaderboard"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginLeft="10dp"

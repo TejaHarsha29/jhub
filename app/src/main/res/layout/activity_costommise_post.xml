@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CostommisePostActivity">
+    tools:context="com.appsByHarsha.jhub.CostommisePostActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -160,5 +160,16 @@
         app:riv_mutate_background="true"
         app:riv_oval="false"
         app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to select image"
+        app:layout_constraintBottom_toBottomOf="@+id/post_image_edit"
+        app:layout_constraintEnd_toEndOf="@+id/post_image_edit"
+        app:layout_constraintStart_toStartOf="@+id/post_image_edit"
+        app:layout_constraintTop_toTopOf="@+id/post_image_edit"
+        app:layout_constraintVertical_bias="0.62" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
