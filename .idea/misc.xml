@@ -25,7 +25,7 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_create_confession.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_customise_placement.xml" value="0.2" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
-        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_leader_board.xml" value="0.4" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_leader_board.xml" value="0.264" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_likes.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -38,11 +38,14 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/comment_rv_sample.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/confession_sample_rv.xml" value="0.176" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/dashboard_rv_sample.xml" value="0.4" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_bffs.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_confession.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_crush.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_notification.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_placement.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_search.xml" value="0.2359375" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_star.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/like_rv_sample.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/notification_sample.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/placement_rv_sample.xml" value="0.264" />

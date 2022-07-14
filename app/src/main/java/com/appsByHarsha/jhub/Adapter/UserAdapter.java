@@ -206,7 +206,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            user_pp = itemView.findViewById(R.id.usser_pp);
+            user_pp = itemView.findViewById(R.id.top_user);
             star = itemView.findViewById(R.id.star_count);
             name = itemView.findViewById(R.id.name);
             about = itemView.findViewById(R.id.about);

@@ -21,9 +21,6 @@ import android.widget.Toast;
 import com.appsByHarsha.jhub.Adapter.PostAdapter;
 import com.appsByHarsha.jhub.Model.PostModel;
 import com.appsByHarsha.jhub.Model.UserModel;
-import com.appsByHarsha.jhub.Model.PostModel;
-import com.appsByHarsha.jhub.Model.UserModel;
-import com.appsByHarsha.jhub.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -83,7 +80,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        editImage = findViewById(R.id.usser_pp);
+        editImage = findViewById(R.id.top_user);
 
         auth =FirebaseAuth.getInstance();
         storage = FirebaseStorage.getInstance();

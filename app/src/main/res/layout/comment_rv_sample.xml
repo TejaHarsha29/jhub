@@ -7,7 +7,7 @@
     android:padding="10dp">
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/usser_pp"
+        android:id="@+id/top_user"
         android:layout_width="@dimen/_40mdp"
         android:layout_height="@dimen/_40mdp"
 
@@ -30,9 +30,9 @@
         android:text="Teja Harsha"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
-        app:layout_constraintStart_toEndOf="@+id/usser_pp"
-        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_user"
+        app:layout_constraintStart_toEndOf="@+id/top_user"
+        app:layout_constraintTop_toTopOf="@+id/top_user"
         app:layout_constraintVertical_bias="0.16000003" />
 
     <TextView

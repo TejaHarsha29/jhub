@@ -15,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.appsByHarsha.jhub.Model.UserModel;
-import com.appsByHarsha.jhub.R;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -59,7 +58,7 @@ public class EditProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_profile);
 
 
-        editImage = findViewById(R.id.usser_pp);
+        editImage = findViewById(R.id.top_user);
         ediiit = findViewById(R.id.edit);
 
         user_et = findViewById(R.id.user_name);

@@ -13,40 +13,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JHub">
         <activity
-            android:name="com.appsByHarsha.jhub.EditProfileActivity"
+            android:name=".LeaderBoardActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.CustomisePlacementActivity"
+            android:name=".EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.CreateConfessionActivity"
+            android:name=".CustomisePlacementActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.ConfessionsActivity"
+            android:name=".CreateConfessionActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.LikesActivity"
+            android:name=".ConfessionsActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.CommentActivity"
+            android:name=".LikesActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.CostommisePostActivity"
+            android:name=".CommentActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.OtpfromLoginActivity"
+            android:name=".CostommisePostActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.ProfileActivity"
+            android:name=".OtpfromLoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.LoginActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.OtpActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.appsByHarsha.jhub.RegActivity"
+            android:name=".OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,7 +58,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.appsByHarsha.jhub.MainActivity"
+            android:name=".MainActivity"
             android:exported="false" />
 
         <meta-data

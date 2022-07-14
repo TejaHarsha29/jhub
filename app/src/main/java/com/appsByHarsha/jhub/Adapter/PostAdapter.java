@@ -331,7 +331,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder>{
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            profile = itemView.findViewById(R.id.usser_pp);
+            profile = itemView.findViewById(R.id.top_user);
             postImage = itemView.findViewById(R.id.post_image);
             userName = itemView.findViewById(R.id.name);
             about =  itemView.findViewById(R.id.roll);

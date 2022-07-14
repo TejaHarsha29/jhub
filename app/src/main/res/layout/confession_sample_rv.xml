@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/usser_pp"
+            android:id="@+id/top_user"
             android:layout_width="@dimen/_50mdp"
             android:layout_height="@dimen/_50mdp"
 
@@ -77,9 +77,9 @@
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
-            app:layout_constraintStart_toEndOf="@+id/usser_pp"
-            app:layout_constraintTop_toTopOf="@+id/usser_pp"
+            app:layout_constraintBottom_toBottomOf="@+id/top_user"
+            app:layout_constraintStart_toEndOf="@+id/top_user"
+            app:layout_constraintTop_toTopOf="@+id/top_user"
             app:layout_constraintVertical_bias="0.16000003" />
 
 
@@ -102,9 +102,9 @@
 
             android:layout_marginEnd="24dp"
             android:src="@drawable/like_highlighted"
-            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+            app:layout_constraintBottom_toBottomOf="@+id/top_user"
             app:layout_constraintEnd_toStartOf="@+id/report_btn"
-            app:layout_constraintTop_toTopOf="@+id/usser_pp"
+            app:layout_constraintTop_toTopOf="@+id/top_user"
             app:layout_constraintVertical_bias="0.31"></ImageView>
 
         <TextView
@@ -114,7 +114,7 @@
             android:elevation="27dp"
             android:text="0 likes"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+            app:layout_constraintBottom_toBottomOf="@+id/top_user"
             app:layout_constraintEnd_toEndOf="@+id/like_btn"
             app:layout_constraintStart_toStartOf="@+id/like_btn"
             app:layout_constraintTop_toBottomOf="@+id/like_btn"
@@ -129,9 +129,9 @@
             android:src="@drawable/dots"
             android:text="Report"
             android:textColor="#000000"
-            app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
+            app:layout_constraintBottom_toBottomOf="@+id/top_user"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/usser_pp"
+            app:layout_constraintTop_toTopOf="@+id/top_user"
             tools:ignore="TextContrastCheck,TouchTargetSizeCheck"></ImageView>
 
 

@@ -50,7 +50,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/usser_pp"
+        android:id="@+id/top_user"
         android:layout_width="@dimen/_50mdp"
         android:layout_height="@dimen/_50mdp"
         android:layout_marginStart="24dp"
@@ -72,9 +72,9 @@
         android:textColor="#000000"
         android:textSize="@dimen/_14mdp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
-        app:layout_constraintStart_toEndOf="@+id/usser_pp"
-        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_user"
+        app:layout_constraintStart_toEndOf="@+id/top_user"
+        app:layout_constraintTop_toTopOf="@+id/top_user"
         app:layout_constraintVertical_bias="0.36" />
 
     <TextView
@@ -86,9 +86,9 @@
         android:text="keep smiling"
         android:textColor="#000000"
         android:textSize="@dimen/_11mdp"
-        app:layout_constraintBottom_toBottomOf="@+id/usser_pp"
-        app:layout_constraintStart_toEndOf="@+id/usser_pp"
-        app:layout_constraintTop_toTopOf="@+id/usser_pp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_user"
+        app:layout_constraintStart_toEndOf="@+id/top_user"
+        app:layout_constraintTop_toTopOf="@+id/top_user"
         app:layout_constraintVertical_bias="0.82" />
 
     <EditText
@@ -107,8 +107,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/post_image_edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/usser_pp"
-        app:layout_constraintTop_toBottomOf="@+id/usser_pp"
+        app:layout_constraintStart_toStartOf="@+id/top_user"
+        app:layout_constraintTop_toBottomOf="@+id/top_user"
         tools:ignore="TouchTargetSizeCheck" />
 
     <View
@@ -154,7 +154,7 @@
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usser_pp"
+        app:layout_constraintTop_toBottomOf="@+id/top_user"
         app:riv_border_color="#333333"
         app:riv_corner_radius="5dip"
         app:riv_mutate_background="true"

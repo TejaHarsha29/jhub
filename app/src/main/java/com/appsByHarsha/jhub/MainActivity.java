@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 import com.appsByHarsha.jhub.Model.UserModel;
 import com.appsByHarsha.jhub.Model.NotificationModel;
-import com.appsByHarsha.jhub.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -37,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView leaderBoard;
 
+    ImageView imageView;
+
 
 
     @Override
@@ -50,9 +51,12 @@ public class MainActivity extends AppCompatActivity {
         confessions = findViewById(R.id.cupid);
         leaderBoard = findViewById(R.id.imageView6);
 
+
         leaderBoard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,LeaderBoardActivity.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Leaderboards will be available soon", Toast.LENGTH_SHORT).show();
             }
         });
@@ -85,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        profile =findViewById(R.id.usser_pp);
+        profile =findViewById(R.id.top_user);
 
 
 

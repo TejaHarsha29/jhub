@@ -88,7 +88,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
-            profile = itemView.findViewById(R.id.usser_pp);
+            profile = itemView.findViewById(R.id.top_user);
             name = itemView.findViewById(R.id.name);
             comment = itemView.findViewById(R.id.comment);
             time = itemView.findViewById(R.id.about_pp);

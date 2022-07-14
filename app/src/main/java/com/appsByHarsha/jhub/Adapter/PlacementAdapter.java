@@ -149,7 +149,7 @@ public class PlacementAdapter extends RecyclerView.Adapter<PlacementAdapter.view
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            profile = itemView.findViewById(R.id.usser_pp);
+            profile = itemView.findViewById(R.id.top_user);
             optionsButton = itemView.findViewById(R.id.options_btn);
             name = itemView.findViewById(R.id.name);
             rollNo = itemView.findViewById(R.id.roll);
