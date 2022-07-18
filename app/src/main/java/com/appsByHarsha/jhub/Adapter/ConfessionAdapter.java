@@ -2,6 +2,7 @@ package com.appsByHarsha.jhub.Adapter;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -74,6 +75,21 @@ public class ConfessionAdapter extends RecyclerView.Adapter<ConfessionAdapter.vi
             }
         });
 
+        holder.sharetoWhat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                String link ="Hey,check out this Confession"+"\n\n"+confessionModel.getConfessionText()+"\n\n"+"http://play.google.com/store/apps/details?id="+context.getPackageName();
+                sendIntent.putExtra(Intent.EXTRA_TEXT,link);
+                sendIntent.setPackage("com.whatsapp");
+                sendIntent.setType("text/plain");
+                context.startActivity(sendIntent);
+
+            }
+        });
+
 
 
         holder.report_btn.setOnClickListener(new View.OnClickListener() {
@@ -136,6 +152,7 @@ public class ConfessionAdapter extends RecyclerView.Adapter<ConfessionAdapter.vi
         ImageView like_btn;
         ImageView report_btn;
         TextView likes;
+        ImageView sharetoWhat;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -143,6 +160,7 @@ public class ConfessionAdapter extends RecyclerView.Adapter<ConfessionAdapter.vi
             like_btn = itemView.findViewById(R.id.like_btn);
             report_btn = itemView.findViewById(R.id.report_btn);
             likes = itemView.findViewById(R.id.likessss);
+            sharetoWhat = itemView.findViewById(R.id.shar);
         }
     }
 

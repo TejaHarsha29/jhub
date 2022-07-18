@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -53,7 +54,6 @@ public class DarkRoomFragment extends Fragment {
 
         list=new ArrayList<>();
 
-        list.add(new MessageModel("fds","djfhidsn",787));
 
         final ChatAdapter chatAdapter=new ChatAdapter(list,getContext());
         recyclerView.setAdapter(chatAdapter);
@@ -113,6 +113,11 @@ public class DarkRoomFragment extends Fragment {
 
 
 
+
+
+
         return view;
     }
+
+
 }
