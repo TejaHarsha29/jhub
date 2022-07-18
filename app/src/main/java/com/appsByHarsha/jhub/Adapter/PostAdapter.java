@@ -131,7 +131,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder>{
                     holder.userName.setText(userModel.getName());
                     holder.about.setText(userModel.getRollNumber());
 
-                    Picasso.get().load(userModel.getProfile_photo()).placeholder(R.drawable.placeholder).into(holder.profile);
+                    Picasso.get().load(userModel.getProfile_photo()).placeholder(R.drawable.man).into(holder.profile);
 
                 }
 

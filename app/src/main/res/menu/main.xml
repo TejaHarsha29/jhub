@@ -32,6 +32,23 @@
         />
 
     <item
+        android:id="@+id/dark"
+        android:enabled="true"
+        android:icon="@drawable/dark"
+        android:title="Dark Room"
+
+        app:cnb_backgroundColor="#fece2e"
+        app:cnb_iconColor="@color/black"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/black"
+
+
+
+        />
+
+
+
+    <item
         android:id="@+id/notificate"
         android:title="notifications"
         android:icon="@drawable/notifications"

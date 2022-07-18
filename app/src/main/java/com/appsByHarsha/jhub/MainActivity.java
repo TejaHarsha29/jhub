@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -52,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
         leaderBoard = findViewById(R.id.imageView6);
 
 
+
         leaderBoard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,LeaderBoardActivity.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Leaderboards will be available soon", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -199,6 +200,9 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.search:
                         fragment = new SearchFragment();
+                        break;
+                    case R.id.dark:
+                        fragment = new DarkRoomFragment();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,fragment).commit();

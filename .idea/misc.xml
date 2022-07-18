@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/bg_receiver.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/bg_sender.xml" value="0.12864583333333332" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/black_shade.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/bottom_back.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/btn_back.xml" value="0.26614583333333336" />
@@ -16,6 +18,7 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/post_btn_back.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/pr_back.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/report_back.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/spinner_back.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/white_circle.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/drawable/yellow_circle.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/font/.xml" value="0.15729166666666666" />
@@ -41,6 +44,7 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_bffs.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_confession.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_crush.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_dark_room.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_notification.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/fragment_placement.xml" value="0.25" />
@@ -51,6 +55,8 @@
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/placement_rv_sample.xml" value="0.264" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/post_shimmer.xml" value="0.264" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/progres_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/sample_receiver.xml" value="0.25" />
+        <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/sample_sender.xml" value="0.25" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/story_rv_design.xml" value="0.536" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/layout/user_sample.xml" value="0.264" />
         <entry key="..\:/Users/harsha/AndroidStudioProjects/jhub3/app/src/main/res/menu/filter_params.xml" value="0.25" />

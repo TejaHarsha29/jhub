@@ -25,13 +25,10 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="@dimen/_30mdp"
-            android:layout_height="@dimen/_30mdp"
+            android:layout_width="@dimen/_25mdp"
+            android:layout_height="@dimen/_25mdp"
             android:layout_marginStart="16dp"
-            android:src="@drawable/back"
-            android:padding="@dimen/_8mdp"
-            android:background="@drawable/post_ack_shadow"
-
+            android:src="@drawable/left_arrow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"></ImageView>
@@ -56,9 +53,11 @@
 
         <Spinner
             android:id="@+id/coursesspinner"
-            android:layout_height="50dp"
-            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_width="80dp"
             android:layout_marginEnd="24dp"
+            android:background="@drawable/bottom_back"
+            android:backgroundTint="#CCFFFFFF"
             android:padding="2dp"
             android:src="@drawable/dots"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -66,7 +65,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.4"
 
-            />
+            >
+
+        </Spinner>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="10dp"
+            android:rotation="270"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="@+id/coursesspinner"
+            app:layout_constraintEnd_toEndOf="@+id/coursesspinner"
+            app:layout_constraintTop_toTopOf="@+id/coursesspinner"></ImageView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
