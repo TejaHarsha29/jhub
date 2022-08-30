@@ -13,8 +13,10 @@
    <a href="#contribution">Contribute</a>
   
   <h4 align="center">Check out the Demo Video 📽 on <a href="https://youtu.be/KNJab8bFc-E">Youtube</a></h3>
+  <h4 align="center">Check out My Resume 📝 <a href="https://github.com/TejaHarsha29/jhub/files/9451340/Resume_tejaHarsha.pdf">Here</a></h3>
   <h5 align="center">Made with ❤️ by  <a href="https://github.com/TejaHarsha29">Harsha</a></h3>
   
+
   </p>
 </p>
 
