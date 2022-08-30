@@ -39,6 +39,21 @@ But here's a plot twist: any confession with a status of more than 10 reports wi
       -   [Image Picker](https://github.com/Dhaval2404/ImagePicker)   -Easy to use and configurable library to Pick an image from the Gallery or Capture image using Camera. It also allows to Crop and Compresses the Image based on Aspect Ratio, Resolution and Image Size.
       -   [Shimmer Recycler View](https://github.com/sharish/ShimmerRecyclerView)   -A custom recycler view with shimmer views to indicate that views are loading.
 
+## Screenshots
+|![Screenshot1](https://user-images.githubusercontent.com/91326578/187391524-6bc92263-f966-4a8a-bbb9-9d8d837e3dbd.jpeg)|![Screenshot2](https://user-images.githubusercontent.com/91326578/187391533-1677fed9-6c6b-43cb-bcc6-bda6a661fd10.jpeg)|![Screenshot3](https://user-images.githubusercontent.com/91326578/187391537-a75f6fd7-65f8-4829-bcd1-927e68030e0f.jpeg)|![Screenshot3-2](https://user-images.githubusercontent.com/91326578/187391541-22552860-8911-476a-8070-09fb0446e093.jpeg)|
+|---|---|---|---|
+|![Screenshot4](https://user-images.githubusercontent.com/91326578/187391545-e1bce4b4-864f-45e2-9e73-0bf873eee7be.jpeg)|![Screenshot5](https://user-images.githubusercontent.com/91326578/187391550-13de6287-ead8-480a-b91a-b1b830c58ddd.jpeg)|![Screenshot6](https://user-images.githubusercontent.com/91326578/187391553-0cbf8806-ce0c-4a74-95af-674f94f3c721.jpeg)|![Screenshot6](https://user-images.githubusercontent.com/91326578/187391558-44d2a5e1-84d3-4d79-97a5-70937372699e.jpeg)|
+
 ## About me
 Engineering Graduate passionate about Computers and Electronics. I'm a Computer Enthusiast with a good Hand Shake in Programming Specializing in Developing high-quality Android apps and Proficient in a range of modern technologies including Java, C, Native Android, Git, and Firebase. Apart from Programming, I have good experience in working with Software like Android Studio, Adobe Photoshop, Unity, and GitHub.
+
+
+## Download from here:
+
+<a href='https://bit.ly/jhubapp' target='_blank'>
+    <img height='150' style='border:0px;height:150px;' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' border='0' alt='Download from Google Play' />   </a>
+ 
+<h4>You can also access all the releases from <a href="https://github.com/TejaHarsha29/jhub/releases">Releases tab</a></h3>
+
+
 
